@@ -21,14 +21,14 @@ const Main = () => {
                 type="text"
                 name="email"
                 placeholder="Correo electrónico"
-                className="pinput"
+                className="input"
                 required
               />
               <input
                 type="password"
                 name="password"
                 placeholder="Contraseña"
-                className="pinput"
+                className="input"
                 required
               />
               <input

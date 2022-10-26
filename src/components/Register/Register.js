@@ -21,31 +21,31 @@ return (
                 type="text"
                 name="nombre"
                 placeholder="Nombre"
-                className="pinput"
+                className="input"
                 required
               />
               <input
                 type="number"
                 name="number"
                 placeholder="Telefono celular"
-                className="pinput"
+                className="input"
                 required
               />
               <input
                 type="text"
                 name="email"
                 placeholder="Correo electrónico"
-                className="pinput"
+                className="input"
                 required
               />
               <input
                 type="password"
                 name="password"
                 placeholder="Contraseña"
-                className="pinput"
+                className="input"
                 required
               />
-              <select className="pinput" placeholder="Tipo">
+              <select className="input" placeholder="Tipo">
                 <option value="Contratante">Contratante</option>
                 <option value="Arquitecto">Arquitecto</option>
               </select>
