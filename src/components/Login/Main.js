@@ -1,5 +1,7 @@
 import Logo from "../../img/Prev.png";
 import "../../App.css";
+import { Link } from "react-router-dom";
+import { rutas } from "../../helpers/Rutas";
 
 const Main = () => {
   return (
@@ -19,14 +21,14 @@ const Main = () => {
                 type="text"
                 name="email"
                 placeholder="Correo electrónico"
-                className="pCorreo"
+                className="pinput"
                 required
               />
               <input
                 type="password"
                 name="password"
                 placeholder="Contraseña"
-                className="pContrasenia"
+                className="pinput"
                 required
               />
               <input
@@ -40,7 +42,7 @@ const Main = () => {
             </div>
             <div className="line"></div>
             <div className="register">
-              <a role="button" href="">Registrarse</a>
+              <Link role="button" to={rutas.register} >Registrarse</Link>
             </div>
           </div>
         </div>
