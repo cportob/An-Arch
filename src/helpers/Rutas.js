@@ -1,8 +1,7 @@
 
-export const rutas ={
-
-    login:"/",
-    register:"/register"
-    
-}
+export const rutas = {
+  login: "/",
+  register: "/register",
+  misProyectos: "/misProyectos",
+};
 

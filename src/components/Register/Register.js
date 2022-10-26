@@ -3,16 +3,19 @@ import "../../App.css";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
 
-const Register = () =>{
-return (
+const Register = () => {
+  return (
     <main className="main">
       <div className="globalContainer">
-        <div className="container boxlogo" >
+        <div className="container boxlogo">
           <div className="logo">
             <img src={Logo} alt="" />
           </div>
           <h1 className="tituloh1">An Arch</h1>
-          <h3 className="tiutloP">Te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</h3>
+          <h3 className="tiutloP">
+            Te ayuda a comunicarte y compartir con las personas que forman parte
+            de tu vida.
+          </h3>
         </div>
         <div className="container">
           <div className="formulario">
@@ -49,59 +52,18 @@ return (
                 <option value="Contratante">Contratante</option>
                 <option value="Arquitecto">Arquitecto</option>
               </select>
-              <input
-                type="submit"
-                value="Registrarse"
-                className="bIniciar"
-              />
+              <input type="submit" value="Registrarse" className="bIniciar" />
             </form>
             <div className="line"></div>
             <div className="enlace">
-              <Link role="button" to={rutas.login} >Iniciar sesión</Link>
+              <Link role="button" to={rutas.misProyectos}>
+                Iniciar sesión
+              </Link>
             </div>
           </div>
-          </div>
-          </div>
+        </div>
+      </div>
     </main>
-        
-)
-}
+  );
+};
 export default Register;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
