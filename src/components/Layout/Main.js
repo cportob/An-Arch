@@ -14,19 +14,19 @@ const Main = () => {
         </div>
         <div className="container">
           <div className="formulario">
-            <form action="form" className="correo">
+            <form action="form" className="form">
               <input
                 type="text"
                 name="email"
                 placeholder="Correo electrónico"
-                className="pCorreo"
+                className="input"
                 required
               />
               <input
                 type="password"
                 name="password"
                 placeholder="Contraseña"
-                className="pContrasenia"
+                className="input"
                 required
               />
               <input
