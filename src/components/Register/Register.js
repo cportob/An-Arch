@@ -56,7 +56,7 @@ return (
               />
             </form>
             <div className="line"></div>
-            <div className="main2">
+            <div className="enlace">
               <Link role="button" to={rutas.login} >Iniciar sesión</Link>
             </div>
           </div>

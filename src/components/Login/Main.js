@@ -41,7 +41,7 @@ const Main = () => {
               <a href="">¿Olvidaste tu Contraseña?</a>
             </div>
             <div className="line"></div>
-            <div className="register">
+            <div className="enlace">
               <Link role="button" to={rutas.register} >Registrarse</Link>
             </div>
           </div>
