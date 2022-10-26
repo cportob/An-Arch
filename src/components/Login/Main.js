@@ -7,12 +7,15 @@ const Main = () => {
   return (
     <main className="main">
       <div className="globalContainer">
-        <div className="container boxlogo" >
+        <div className="container boxlogo">
           <div className="logo">
             <img src={Logo} alt="" />
           </div>
           <h1 className="tituloh1">An Arch</h1>
-          <h3 className="tiutloP">Te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</h3>
+          <h3 className="tiutloP">
+            Te ayuda a comunicarte y compartir con las personas que forman parte
+            de tu vida.
+          </h3>
         </div>
         <div className="container">
           <div className="formulario">
@@ -42,13 +45,15 @@ const Main = () => {
             </div>
             <div className="line"></div>
             <div className="enlace">
-              <Link role="button" to={rutas.register} >Registrarse</Link>
+              <Link role="button" to={rutas.register}>
+                Registrarse
+              </Link>
             </div>
           </div>
         </div>
       </div>
     </main>
   );
-}
- 
+};
+
 export default Main;

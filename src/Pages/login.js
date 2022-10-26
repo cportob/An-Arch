@@ -1,8 +1,6 @@
 import Main from "../components/Login/Main";
 
 const Login = () => {
-return (
-<Main></Main>
-);
-}
+  return <Main />;
+};
 export default Login;
