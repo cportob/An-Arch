@@ -2,6 +2,10 @@ import User from "../../img/User.png";
 import Logo from "../../img/Prev.png";
 import "../../App.css";
 
+function menu() {
+  document.getElementById("dropDown").classList.toggle("inactive");
+}
+
 const Header = () => {
   return (
     <header>
@@ -16,8 +20,25 @@ const Header = () => {
           <div></div>
         </div>
         <div className="hContainer user">
-          <div className="userL">
+          <div>
+            <nav className="nave">
+              <ul>
+                <li>
+                  <a href="">Mis Proyectos</a>
+                </li>
+                <li>
+                  <a href="">Crear proyecto</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="userL" onClick={menu}>
             <img src={User} alt="" />
+            <div className="dropdown-content inactive" id="dropDown">
+              <p>Perfil</p>
+              <div className="line"></div>
+              <p>Cerrar sesión</p>
+            </div>
           </div>
         </div>
       </div>

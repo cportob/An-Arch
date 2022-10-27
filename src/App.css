@@ -54,8 +54,7 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -274,8 +273,6 @@
 
 .enlace a {
   background-color: #42b72a;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -288,8 +285,6 @@
 
 .hGlobalContainer {
   display: flex;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   justify-content: space-between;
   background-color: lightblue;
@@ -303,7 +298,7 @@
 }
 
 .hContainer.user {
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .userL {
@@ -325,20 +320,48 @@
   object-fit: cover;
 }
 
-/* .userL {
+.nave {
+  margin-right: 22px;
+}
+
+.nave ul {
+  width: 100%;
+  text-align: right;
+}
+
+.nave ul li {
+  display: inline-block;
+  justify-content: space-around;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.nave ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.userL {
   position: relative;
   display: inline;
 }
 
 .dropdown-content {
-  display: none;
+  display: flex;
   position: absolute;
-  background-color: #f9f9f9;
+  flex-direction: column;
+  background-color: lightblue;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 5px;
+  right: 0px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   z-index: 1;
+  margin-top: 20px;
 }
 
-.userL:hover .dropdown-content {
-  display: block;
-} */
+.inactive {
+  display: none;
+}
