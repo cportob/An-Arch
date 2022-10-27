@@ -1,6 +1,8 @@
 import User from "../../img/User.png";
 import Logo from "../../img/Prev.png";
 import "../../App.css";
+import { Link } from "react-router-dom";
+import { rutas } from "../../helpers/Rutas";
 
 function menu() {
   document.getElementById("dropDown").classList.toggle("inactive");
@@ -24,10 +26,13 @@ const Header = () => {
             <nav className="nave">
               <ul>
                 <li>
-                  <a href="">Mis Proyectos</a>
+                  <Link to={rutas.misProyectos}>Mis Proyectos</Link>
                 </li>
                 <li>
-                  <a href="">Crear proyecto</a>
+                  <Link to={rutas.Crear}>Crear proyecto</Link>
+                </li>
+                <li>
+                  <Link to={rutas.misProyectos}>Notificaciones</Link>
                 </li>
               </ul>
             </nav>
@@ -35,9 +40,13 @@ const Header = () => {
           <div className="userL" onClick={menu}>
             <img src={User} alt="" />
             <div className="dropdown-content inactive" id="dropDown">
-              <p>Perfil</p>
+              <Link className="item" to={rutas.actualizar}>
+                Actualizar perfil
+              </Link>
               <div className="line"></div>
-              <p>Cerrar sesión</p>
+              <Link className="item" to={rutas.login}>
+                Cerrar sesión
+              </Link>
             </div>
           </div>
         </div>

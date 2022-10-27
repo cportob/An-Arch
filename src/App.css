@@ -197,13 +197,6 @@
   /* background-color: white; */
 }
 
-/* .tituloh3{
-  text-decoration: none;
-} */
-/* .container.boxlogo h2{
-  text-align: left;
-} */
-
 .container .formulario {
   display: flex;
   flex-direction: column;
@@ -215,14 +208,14 @@
   background-color: white;
 }
 
-.container .formulario .form {
+.container .formulario .form1 {
   display: flex;
   flex-direction: column;
   margin: 5px;
   width: 100%;
 }
 
-.input {
+.formulario .input {
   font-size: 20px;
   width: 100%;
   padding: 5px;
@@ -360,8 +353,121 @@
   border-radius: 2px;
   z-index: 1;
   margin-top: 20px;
+  list-style: none;
 }
 
+.item {
+  text-decoration: none;
+  color: black;
+}
 .inactive {
   display: none;
+}
+
+/* Actualizar */
+.cActualizar {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(../src/img/Fondo.jpg) no-repeat; */
+  background-color: azure;
+  background-size: cover;
+}
+.AGlobalContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  max-width: 1140px;
+  max-height: 440px;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.aContainer1 {
+  display: flex;
+  width: 400px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.aContainer1 .datos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aContainer1 .datos .aInput {
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border-color: lightgray;
+}
+
+.bActualizar {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Proyectos */
+
+.pMain {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(../src/img/Fondo.jpg) no-repeat; */
+  /* background-color: azure; */
+  background: red;
+  background-size: cover;
+}
+
+.pMain .pMain1 {
+  width: 100%;
+  height: 100vh;
+  margin: 20px;
+  border: 10px black solid;
+  background: #fff;
+}
+
+.pGlobalContainer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pGlobalContainer h1 {
+  text-align: center;
+}
+.elementos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.elementos .elemento {
+  width: 350px;
+  height: 350px;
+  background: orange;
 }

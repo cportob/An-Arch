@@ -19,7 +19,7 @@ const Main = () => {
         </div>
         <div className="container">
           <div className="formulario">
-            <form action="form" className="correo">
+            <form action="form1" className="correo">
               <input
                 type="text"
                 name="email"
@@ -41,7 +41,7 @@ const Main = () => {
               />
             </form>
             <div className="oContrasenia">
-              <a href="">¿Olvidaste tu Contraseña?</a>
+              <Link href="">¿Olvidaste tu Contraseña?</Link>
             </div>
             <div className="line"></div>
             <div className="enlace">
