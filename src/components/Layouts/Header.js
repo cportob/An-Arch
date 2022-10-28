@@ -16,8 +16,33 @@ const Header = () => {
           <div></div>
         </div>
         <div className="hContainer user">
+<<<<<<< Updated upstream
           <div className="userL">
             <img src={User} alt="" />
+=======
+          <div>
+            <nav className="nave">
+              <ul>
+                <li>
+                  <Link to={rutas.misProyectos}>Mis Proyectos</Link>
+                </li>
+                <li>
+                  <Link to={rutas.misProyectos}>Notificaciones</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="userL" onClick={menu}>
+            <img src={User} alt="" />
+            <div className="dropdown-content inactive" id="dropDown">
+              <Link className="item" to={rutas.actualizar}>
+                Actualizar perfil
+              </Link>
+              <Link className="item" to={rutas.login}>
+                Cerrar sesión
+              </Link>
+            </div>
+>>>>>>> Stashed changes
           </div>
         </div>
       </div>

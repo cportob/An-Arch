@@ -4,6 +4,11 @@ const MisProyectos = () => {
   return (
     <>
       <CHeader></CHeader>
+<<<<<<< Updated upstream
+=======
+      <CProyectos></CProyectos>
+      
+>>>>>>> Stashed changes
     </>
   );
 };

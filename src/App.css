@@ -333,12 +333,228 @@
 .dropdown-content {
   display: none;
   position: absolute;
+<<<<<<< Updated upstream
   background-color: #f9f9f9;
+=======
+  flex-direction: column;
+  background-color: lightblue;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  right: 0px;
+>>>>>>> Stashed changes
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+<<<<<<< Updated upstream
 }
 
 .userL:hover .dropdown-content {
   display: block;
 } */
+=======
+  margin-top: 20px;
+  list-style: none;
+}
+
+.item {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.inactive {
+  display: none;
+}
+
+/* Actualizar */
+.cActualizar {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(../src/img/Fondo.jpg) no-repeat; */
+  background-color: azure;
+  background-size: cover;
+}
+
+.AGlobalContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  max-width: 1140px;
+  max-height: 500px;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.aContainer1 {
+  display: flex;
+  width: 400px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.aContainer1 .datos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aContainer1 .datos .aInput {
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border-color: lightgray;
+}
+
+.bActualizar {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Proyectos */
+
+.pMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(../src/img/Fondo.jpg) no-repeat; */
+  /* background-color: azure; */
+  background: red;
+}
+
+.pMain .pMain1 {
+  width: 100%;
+  margin: 20px;
+  border: 10px black solid;
+  background: #fff;
+}
+
+.pGlobalContainer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pGlobalContainer h1 {
+  text-align: center;
+}
+.elementos {
+  width: 100%;
+  margin: auto;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.elementos .elemento {
+  background-color: orange;
+  color: white;
+  flex: none;
+  position: relative;
+  width: calc((100% - 40px) / 5);
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+
+.elementos .elemento:last-child {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.textoBox {
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* crear */
+
+#descp {
+  height: 100px;
+}
+
+.bGuardar {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.cCrear {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(../src/img/Fondo.jpg) no-repeat; */
+  background-color: azure;
+  background-size: cover;
+}
+
+.cGlobalContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  max-width: 1140px;
+  max-height: 600px;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.overlay {
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  width: 400px;
+  background-color: white;
+  border-bottom: #262626;
+  padding: 20px;
+}
+>>>>>>> Stashed changes
