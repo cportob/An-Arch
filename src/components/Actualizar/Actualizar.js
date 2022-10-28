@@ -7,6 +7,8 @@ const Actualizar = () => {
         </div>
         <div className="aContainer1">
           <form className="datos" action="actualizar">
+            <p>Subir foto de perfil</p>
+            <input type="file" name="file" className="aInput" placeholder="Foto de perfil"/>
             <select name="tipoP" className="aInput">
               <option value="Contratante">Natural</option>
               <option value="Arquitecto">Juridica</option>

@@ -13,8 +13,7 @@ const Register = () => {
           </div>
           <h1 className="tituloh1">An Arch</h1>
           <h3 className="tiutloP">
-            Te ayuda a comunicarte y compartir con las personas que forman parte
-            de tu vida.
+          Necesitas un arquitecto o buscas un trabajo?, pues este ese tu lugar. 
           </h3>
         </div>
         <div className="container">
@@ -31,6 +30,13 @@ const Register = () => {
                 type="number"
                 name="number"
                 placeholder="Telefono celular"
+                className="input"
+                required
+              />
+              <input
+                type="number"
+                name="nit"
+                placeholder="NIT"
                 className="input"
                 required
               />
