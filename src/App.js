@@ -6,6 +6,8 @@ import Register from "./Pages/register";
 import MisProyectos from "./Pages/misProyectos";
 import Actualizar from "./Pages/actualizar";
 import Crear from "./Pages/Crear";
+// import { useState } from "react";
+// import Main from "./components/Login/Main";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -13,16 +15,27 @@ const AppRoutes = () => {
     { path: rutas.register, element: <Register /> },
     { path: rutas.misProyectos, element: <MisProyectos /> },
     { path: rutas.actualizar, element: <Actualizar /> },
-    { path: rutas.Crear, element: <Crear></Crear> },
+    { path: rutas.Crear, element: <Crear /> },
   ]);
   return routes;
 };
+
 function App() {
+  // const [conectado, setConectado] = useState = (false);
+  // const acceder = (estado) => {
+  //   setConectado(estado);
+  // };
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
-  );
+  //   conectado ? (
+  //   <MisProyectos></MisProyectos>
+  // ) : (
+  //   <Main acceder={acceder}></Main>
+  // )
+  <BrowserRouter>
+    <AppRoutes></AppRoutes>
+  </BrowserRouter>
+  
+  )
 }
 
 export default App;
