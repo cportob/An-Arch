@@ -54,12 +54,13 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .main {
   display: flex;
-  width: 100%;
+  width: 100vh;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -197,6 +198,13 @@
   /* background-color: white; */
 }
 
+/* .tituloh3{
+  text-decoration: none;
+} */
+/* .container.boxlogo h2{
+  text-align: left;
+} */
+
 .container .formulario {
   display: flex;
   flex-direction: column;
@@ -208,14 +216,14 @@
   background-color: white;
 }
 
-.container .formulario .form1 {
+.container .formulario .form {
   display: flex;
   flex-direction: column;
   margin: 5px;
   width: 100%;
 }
 
-.formulario .input {
+.input {
   font-size: 20px;
   width: 100%;
   padding: 5px;
@@ -266,6 +274,8 @@
 
 .enlace a {
   background-color: #42b72a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -278,6 +288,8 @@
 
 .hGlobalContainer {
   display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   justify-content: space-between;
   background-color: lightblue;
@@ -291,7 +303,7 @@
 }
 
 .hContainer.user {
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .userL {
@@ -313,52 +325,36 @@
   object-fit: cover;
 }
 
-.nave {
-  margin-right: 22px;
-}
-
-.nave ul {
-  width: 100%;
-  text-align: right;
-}
-
-.nave ul li {
-  display: inline-block;
-  justify-content: space-around;
-  list-style: none;
-  margin: 10px 20px;
-}
-
-.nave ul li a {
-  text-decoration: none;
-  color: black;
-}
-
 .userL {
   position: relative;
   display: inline;
 }
 
 .dropdown-content {
-  display: flex;
+  display: none;
   position: absolute;
+  background-color: #f9f9f9;
   flex-direction: column;
   background-color: lightblue;
-  justify-content: space-around;
+  /* align-items: center; */
+  justify-content: center;
   margin-top: 10px;
-  padding: 5px;
+  padding: 10px;
   right: 0px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
   z-index: 1;
-  margin-top: 20px;
-  list-style: none;
 }
+
+.userL:hover .dropdown-content {
+  display: block;
+}
+
 
 .item {
   text-decoration: none;
   color: black;
+  padding: 10px;
 }
 .inactive {
   display: none;
@@ -432,18 +428,15 @@
 .pMain {
   display: flex;
   width: 100%;
-  height: auto;
   justify-content: center;
   /* align-items: center; */
   /* background: url(../src/img/Fondo.jpg) no-repeat; */
   /* background-color: azure; */
   background: red;
-  background-size: cover;
 }
 
 .pMain .pMain1 {
   width: 100%;
-  height: 100vh;
   margin: 20px;
   border: 10px black solid;
   background: #fff;
@@ -460,28 +453,42 @@
 }
 .elementos {
   width: 100%;
-  height: 100vh;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+
   flex-wrap: wrap;
-  padding: 50px;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .elementos .elemento {
-  width: 350px;
-  height: 350px;
-  background: orange;
+  background-color: orange;
+  color: white;
+  flex: none;
+  position: relative;
+  width: calc((100% - 40px) / 5);
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
 }
 
-.textoBox{
+
+.elementos .elemento:last-child {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.textoBox {
   font-size: 20px;
   display: inline-block;
-
 }
 
 /* crear */
 
-#descp{
+#descp {
   height: 100px;
 }
 
@@ -521,3 +528,26 @@
   margin: 20px;
   margin-top: 100px;
 }
+
+.overlay {
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  width: 400px;
+  background-color: white;
+  border-bottom: #262626;
+  padding: 20px;
+}
+>>>>>>> Stashed changes
