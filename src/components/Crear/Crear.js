@@ -1,7 +1,7 @@
 const Crear = () => {
   return (
     <main className="cCrear">
-      <div className="AGlobalContainer">
+      <div className="cGlobalContainer">
         <div className="aContainer2">
           <h2>Crear Proyecto</h2>
         </div>

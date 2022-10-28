@@ -375,6 +375,7 @@
   background-color: azure;
   background-size: cover;
 }
+
 .AGlobalContainer {
   display: flex;
   flex-direction: column;
@@ -504,4 +505,19 @@
   /* background: url(../src/img/Fondo.jpg) no-repeat; */
   background-color: azure;
   background-size: cover;
+}
+
+.cGlobalContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  max-width: 1140px;
+  max-height: 600px;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 100px;
 }
