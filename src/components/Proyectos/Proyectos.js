@@ -1,10 +1,6 @@
 import { useState } from "react";
-// import { Link } from "react-router-dom";
-// import { rutas } from "../../helpers/Rutas";
 import Modal from "../Modal/Modal";
 import add from "../../img/add.png";
-// import iProyecto from "../../img/Fondo.jpg";
-// import Update from "../../img/update.png";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
 
@@ -52,7 +48,6 @@ const Proyectos = () => {
                   <img src={add} alt="" />
                   <label>Crear proyecto</label>
                 </div>
-                {/* <button onClick={() => setOpen(true)}className="crea">+ Crear proyecto</button> */}
               </div>
               <div>
                 <Link className="elementos" to={rutas.dProyecto}>

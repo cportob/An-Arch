@@ -47,6 +47,9 @@ const Header = () => {
               <Link className="item" to={rutas.misProyectos}>
                 Mis Proyectos
               </Link>
+              <Link className="item" to={rutas.buscar}>
+                Buscador
+              </Link>
               <Link className="item" to={rutas.misTrabajos}>
                 Mis Trabajos
               </Link>

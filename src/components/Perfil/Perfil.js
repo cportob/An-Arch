@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-// import { rutas } from "../../helpers/Rutas";
 import User from "../../img/User.png";
 import Update from "../../img/update.png";
 import Modal from "../Modal/Modal";

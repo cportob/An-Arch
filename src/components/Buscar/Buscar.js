@@ -1,4 +1,4 @@
-const Trabajos = () => {
+const Buscar = () => {
   const item = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   return (
     <>
@@ -7,7 +7,16 @@ const Trabajos = () => {
           <div className="pMain1">
             <div className="pGlobalContainer">
               <div>
-                <h1>Mis trabajos</h1>
+                <h1>Proyectos</h1>
+              </div>
+              <div className="dbus">
+                <input
+                  type="text"
+                  name="buscador"
+                  id="buscador"
+                  placeholder="Buscar..."
+                  className="buscarr"
+                />
               </div>
               <div>
                 <div className="elementos">
@@ -26,4 +35,4 @@ const Trabajos = () => {
   );
 };
 
-export default Trabajos;
+export default Buscar;
