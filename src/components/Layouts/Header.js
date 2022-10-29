@@ -1,6 +1,7 @@
 import User from "../../img/User.png";
 import flecha from "../../img/flechaAbajo.png";
 import Logo from "../../img/Prev.png";
+import mail from "../../img/mail.png";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
@@ -20,16 +21,13 @@ const Header = () => {
           <div>
             <h3>An Arch</h3>
           </div>
-          <div></div>
         </div>
         <div className="hContainer user">
           <div>
             <nav className="nave">
-              <ul>
-                <li>
-                  <Link to={rutas.misProyectos}>Bandeja de entrada</Link>
-                </li>
-              </ul>
+              <Link to={rutas.misProyectos} className="bandejaE">
+                <img src={mail} alt="" />
+              </Link>
             </nav>
           </div>
           <div className="userL" onClick={menu}>

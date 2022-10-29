@@ -28,9 +28,8 @@ const Proyectos = () => {
             </div>
           </div>
         </main>
-        <Modal open={open} setOpen={setOpen}>
+        <Modal open={open} setOpen={setOpen} title={"Crear Proyecto"}>
           <div className="crearP">
-            <h1>Crear Proyecto</h1>
             <form className="datos" action="crear">
               <select name="tipoP" className="cInput">
                 <option value="Casa">Casa</option>
@@ -61,26 +60,26 @@ const Proyectos = () => {
               </div>
 
               <input
-                className="cInput"
+                className="input"
                 type="number"
                 name="budget"
                 placeholder="Presupuesto"
                 required
               />
               <textarea
-                className="cInput"
+                className="input"
                 name="textarea"
                 id="descp"
                 placeholder="Descripción"
               />
               <input
-                className="cInput"
+                className="input"
                 type="country"
                 name="country"
                 placeholder="Ciudad"
               />
               <input
-                className="cInput"
+                className="input"
                 type="address"
                 name="address"
                 placeholder="Dirección"
