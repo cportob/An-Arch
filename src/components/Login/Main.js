@@ -1,43 +1,9 @@
-import React, { useRef } from "react";
 import Logo from "../../img/Prev.png";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
 
-const URL_LOGIN = "http://localhost/ws-login/login.php";
-
-const enviarData = async (url, data) => {
-  const resp = await fetch(url, {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  //console.log(resp);
-  const json = await resp.json();
-  //console.log(json);
-
-  return json;
-};
-
 const Main = () => {
-  const refUsuario = useRef(null);
-  const refClave = useRef(null);
-  const handleLogin = async () => {
-    const data = {
-      usuario: refUsuario.current.value,
-      clave: refClave.current.value,
-    };
-    // console.log(data);
-    const respuestaJson = await enviarData(URL_LOGIN, data);
-    console.log("Respuesta del evento: ", respuestaJson.conectado);
-
-    
-    // eslint-disable-next-line no-undef
-    // props.acceder(respuestaJson.conectado);
-  };
-
   return (
     <main className="main">
       <div className="globalContainer">
@@ -59,7 +25,6 @@ const Main = () => {
                 name="email"
                 placeholder="Correo electrónico"
                 className="input"
-                ref={refUsuario}
                 required
               />
               <input
@@ -67,13 +32,14 @@ const Main = () => {
                 name="password"
                 placeholder="Contraseña"
                 className="input"
-                ref={refClave}
                 required
               />
+              <input
+                type="submit"
+                value="Iniciar Sesión"
+                className="bIniciar"
+              />
             </form>
-            <button className="bIniciar" onClick={handleLogin}>
-              Iniciar sesión
-            </button>
             <div className="oContrasenia">
               <Link href="">¿Olvidaste tu Contraseña?</Link>
             </div>
