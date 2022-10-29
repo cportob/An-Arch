@@ -6,6 +6,8 @@ import Register from "./Pages/register";
 import MisProyectos from "./Pages/misProyectos";
 import Actualizar from "./Pages/actualizar";
 import Crear from "./Pages/Crear";
+import MisTrabajos from "./Pages/misTrabajos";
+import Perfil from "./Pages/perfil";
 // import { useState } from "react";
 // import Main from "./components/Login/Main";
 
@@ -16,6 +18,8 @@ const AppRoutes = () => {
     { path: rutas.misProyectos, element: <MisProyectos /> },
     { path: rutas.actualizar, element: <Actualizar /> },
     { path: rutas.Crear, element: <Crear /> },
+    { path: rutas.misTrabajos, element: <MisTrabajos /> },
+    { path: rutas.perfil, element: <Perfil /> },
   ]);
   return routes;
 };
@@ -26,16 +30,15 @@ function App() {
   //   setConectado(estado);
   // };
   return (
-  //   conectado ? (
-  //   <MisProyectos></MisProyectos>
-  // ) : (
-  //   <Main acceder={acceder}></Main>
-  // )
-  <BrowserRouter>
-    <AppRoutes></AppRoutes>
-  </BrowserRouter>
-  
-  )
+    //   conectado ? (
+    //   <MisProyectos></MisProyectos>
+    // ) : (
+    //   <Main acceder={acceder}></Main>
+    // )
+    <BrowserRouter>
+      <AppRoutes></AppRoutes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

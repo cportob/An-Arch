@@ -4,4 +4,6 @@ export const rutas = {
   misProyectos: "/misProyectos",
   actualizar: "/actualizar",
   Crear: "/crear",
+  misTrabajos: "/misTrabajos",
+  perfil: "/perfil",
 };
