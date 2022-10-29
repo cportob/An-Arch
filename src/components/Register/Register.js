@@ -7,14 +7,14 @@ import { useState } from "react";
 const Register = () => {
   const [datos, setDatos] = useState({
     nombre: "",
-    number: "",
+    phone: "",
     nit: "",
     email: "",
     password: "",
     tipo: "",
   });
 
-  const { nombre, number, nit, email, password, tipo } = datos;
+  const { nombre, phone, nit, email, password, tipo } = datos;
 
   const onChange = (e) => {
     setDatos({ ...datos, [e.target.name]: e.target.value });
@@ -46,16 +46,16 @@ const Register = () => {
                 required
               />
               <input
-                type="number"
-                name="number"
-                value={number}
+                type="text"
+                name="phone"
+                value={phone}
                 onChange={onChange}
                 placeholder="Telefono celular"
                 className="input"
                 required
               />
               <input
-                type="number"
+                type="text"
                 name="nit"
                 value={nit}
                 onChange={onChange}
