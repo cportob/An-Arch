@@ -16,22 +16,22 @@ const Crear = () => {
             <div>
               <label className="textoBox">
                 Garage
-                <input type="checkbox" name="garage" className="aInput" />
+                <input type="checkbox" name="garage" className="cInput" />
               </label>
 
               <label className="textoBox">
                 Piscina
-                <input type="checkbox" name="piscina" className="aInput" />
+                <input type="checkbox" name="piscina" className="cInput" />
               </label>
 
               <label className="textoBox">
                 Patio
-                <input type="checkbox" name="patio" className="aInput" />
+                <input type="checkbox" name="patio" className="cInput" />
               </label>
 
               <label className="textoBox">
                 Balcón
-                <input type="checkbox" name="balcon" className="aInput" />
+                <input type="checkbox" name="balcon" className="cInput" />
               </label>
             </div>
 
@@ -61,7 +61,11 @@ const Crear = () => {
               placeholder="Dirección"
             />
             <input type="submit" value="Guardar" className="bGuardar" />
-            <input type="submit" value="Guardar y publicar" className="bGuardar" />
+            <input
+              type="submit"
+              value="Guardar y publicar"
+              className="bGuardar"
+            />
           </form>
         </div>
       </div>

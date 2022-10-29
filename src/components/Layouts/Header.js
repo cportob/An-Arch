@@ -1,4 +1,5 @@
 import User from "../../img/User.png";
+import flecha from "../../img/flechaAbajo.png";
 import Logo from "../../img/Prev.png";
 import "../../App.css";
 import { Link } from "react-router-dom";
@@ -26,24 +27,23 @@ const Header = () => {
             <nav className="nave">
               <ul>
                 <li>
-                  <Link to={rutas.misProyectos}>Mis Proyectos</Link>
-                </li>
-                <li>
-                  <Link to={rutas.Crear}>Crear proyecto</Link>
-                </li>
-                <li>
-                  <Link to={rutas.misProyectos}>Notificaciones</Link>
+                  <Link to={rutas.misProyectos}>Bandeja de entrada</Link>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="userL" onClick={menu}>
-            <img src={User} alt="" />
+            <div className="foto">
+              <img src={User} alt="" />
+              <img className="flecha" src={flecha} alt="" />
+            </div>
             <div className="dropdown-content inactive" id="dropDown">
               <Link className="item" to={rutas.actualizar}>
-                Actualizar perfil
+                Perfil
               </Link>
-              <div className="line"></div>
+              <Link className="item" to={rutas.misProyectos}>
+                Mis Proyectos
+              </Link>
               <Link className="item" to={rutas.login}>
                 Cerrar sesión
               </Link>
