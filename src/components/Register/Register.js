@@ -2,8 +2,24 @@ import Logo from "../../img/Prev.png";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
+import { useState } from "react";
 
 const Register = () => {
+  const [datos, setDatos] = useState({
+    nombre: "",
+    number: "",
+    nit: "",
+    email: "",
+    password: "",
+    tipo: "",
+  });
+
+  const { nombre, number, nit, email, password, tipo } = datos;
+
+  const onChange = (e) => {
+    setDatos({ ...datos, [e.target.name]: e.target.value });
+  };
+
   return (
     <main className="main">
       <div className="globalContainer">
@@ -23,6 +39,8 @@ const Register = () => {
               <input
                 type="text"
                 name="nombre"
+                value={nombre}
+                onChange={onChange}
                 placeholder="Nombre"
                 className="input"
                 required
@@ -30,6 +48,8 @@ const Register = () => {
               <input
                 type="number"
                 name="number"
+                value={number}
+                onChange={onChange}
                 placeholder="Telefono celular"
                 className="input"
                 required
@@ -37,6 +57,8 @@ const Register = () => {
               <input
                 type="number"
                 name="nit"
+                value={nit}
+                onChange={onChange}
                 placeholder="NIT"
                 className="input"
                 required
@@ -44,6 +66,8 @@ const Register = () => {
               <input
                 type="text"
                 name="email"
+                value={email}
+                onChange={onChange}
                 placeholder="Correo electrónico"
                 className="input"
                 required
@@ -51,11 +75,18 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
+                value={password}
+                onChange={onChange}
                 placeholder="Contraseña"
                 className="input"
                 required
               />
-              <select className="input">
+              <select
+                className="input"
+                onChange={onChange}
+                name="tipo"
+                value={tipo}
+              >
                 <option value="Tipo">Tipo/option</option>
                 <option value="Contratante">Contratante</option>
                 <option value="Arquitecto">Arquitecto</option>

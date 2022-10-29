@@ -2,8 +2,19 @@ import Logo from "../../img/Prev.png";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
+import { useState } from "react";
 
 const Main = () => {
+  const [datos, setDatos] = useState({
+    email: "",
+    password: "",
+  });
+
+  const { email, password } = datos;
+
+  const onChange = (e) => {
+    setDatos({ ...datos, [e.target.name]: e.target.value });
+  };
   return (
     <main className="main">
       <div className="globalContainer">
@@ -23,6 +34,8 @@ const Main = () => {
               <input
                 type="text"
                 name="email"
+                value={email}
+                onChange={onChange}
                 placeholder="Correo electrónico"
                 className="input"
                 required
@@ -30,6 +43,8 @@ const Main = () => {
               <input
                 type="password"
                 name="password"
+                value={password}
+                onChange={onChange}
                 placeholder="Contraseña"
                 className="input"
                 required
