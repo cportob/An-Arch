@@ -13,7 +13,8 @@ const Register = () => {
           </div>
           <h1 className="tituloh1">An Arch</h1>
           <h3 className="tiutloP">
-          Necesitas un arquitecto o buscas un trabajo?, pues este ese tu lugar. 
+            Necesitas un arquitecto o buscas un trabajo?, pues este ese tu
+            lugar.
           </h3>
         </div>
         <div className="container">
@@ -54,7 +55,8 @@ const Register = () => {
                 className="input"
                 required
               />
-              <select className="input" placeholder="Tipo">
+              <select className="input">
+                <option value="Tipo">Tipo/option</option>
                 <option value="Contratante">Contratante</option>
                 <option value="Arquitecto">Arquitecto</option>
               </select>

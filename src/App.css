@@ -305,7 +305,7 @@
   display: flex;
   position: absolute;
   flex-direction: column;
-  background-color: lightsteelblue;
+  background-color: lightblue;
   justify-content: center;
   margin-top: 10px;
   padding: 10px;
@@ -560,6 +560,7 @@
 }
 
 .bContainer {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,6 +574,11 @@
 .bContainer img {
   width: 35px;
 }
+
+.bContainer label {
+  cursor: pointer;
+}
+
 /* hovers*/
 
 .bContainer:hover {
