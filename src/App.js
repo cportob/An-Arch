@@ -8,6 +8,7 @@ import Actualizar from "./Pages/actualizar";
 import Crear from "./Pages/Crear";
 import MisTrabajos from "./Pages/misTrabajos";
 import Perfil from "./Pages/perfil";
+import DProyecto from "./Pages/dProyecto";
 // import { useState } from "react";
 // import Main from "./components/Login/Main";
 
@@ -20,6 +21,7 @@ const AppRoutes = () => {
     { path: rutas.Crear, element: <Crear /> },
     { path: rutas.misTrabajos, element: <MisTrabajos /> },
     { path: rutas.perfil, element: <Perfil /> },
+    { path: rutas.dProyecto, element: <DProyecto /> },
   ]);
   return routes;
 };

@@ -6,4 +6,5 @@ export const rutas = {
   Crear: "/crear",
   misTrabajos: "/misTrabajos",
   perfil: "/perfil",
+  dProyecto: "/dProyecto",
 };

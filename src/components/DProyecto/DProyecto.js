@@ -1,44 +1,55 @@
-import { useState } from "react";
-// import { Link } from "react-router-dom";
-// import { rutas } from "../../helpers/Rutas";
+import Update from "../../img/update.png";
 import Modal from "../Modal/Modal";
-import add from "../../img/add.png";
-// import iProyecto from "../../img/Fondo.jpg";
-// import Update from "../../img/update.png";
+import { useState } from "react";
+import iProyecto from "../../img/Fondo.jpg";
 import { Link } from "react-router-dom";
+import back from "../../img/back.png";
 import { rutas } from "../../helpers/Rutas";
 
-const Proyectos = () => {
+const Perfil = () => {
   const [open, setOpen] = useState(false);
-
-  const item = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   return (
     <>
       <div style={{ position: "relative" }}>
         <main className="pMain">
           <div className="pMain1">
-            <div className="pGlobalContainer">
-              <div>
-                <h1>Mis proyectos</h1>
-                <div className="bContainer" onClick={() => setOpen(true)}>
-                  <img src={add} alt="" />
-                  <label>Crear proyecto</label>
-                </div>
-                {/* <button onClick={() => setOpen(true)}className="crea">+ Crear proyecto</button> */}
+            <div className="uGlobalContainer">
+              <div className="cBack">
+                <Link to={rutas.misProyectos} className="back">
+                  <img src={back} alt="" />
+                </Link>
               </div>
               <div>
-                <Link className="elementos" to={rutas.dProyecto}>
-                  {item.map((_, idx) => (
-                    <div key={idx} className="elemento">
-                      {_}
-                    </div>
-                  ))}
-                </Link>
+                <h1>Mi Proyecto</h1>
+              </div>
+              <div className="dProyecto">
+                <div className="iProyecto">
+                  <img src={iProyecto} alt="" />
+                </div>
+                <div className="iDProyecto">
+                  <h2>Tipo</h2>
+                  <p>casa</p>
+                  <h2>Ciudad</h2>
+                  <p>La Ciudad de Joen</p>
+                  <h2>Dirreción</h2>
+                  <p>La casa de joen</p>
+                  <h2>Presupuesto</h2>
+                  <p>20000</p>
+                  <h2>Descripción</h2>
+                  <p>Bla bla bla bla</p>
+                  <h2>Arquitecto a cargo</h2>
+                  <p>None</p>
+                </div>
+                <button className="bIniciar">Publicar</button>
+                <div className="bContainer" onClick={() => setOpen(true)}>
+                  <img src={Update} alt="" />
+                  <label>Editar</label>
+                </div>
               </div>
             </div>
           </div>
         </main>
-        <Modal open={open} setOpen={setOpen} title={"Crear Proyecto"}>
+        <Modal open={open} setOpen={setOpen} title={"Actualizar Proyecto"}>
           <div className="crearP">
             <form className="datos" action="crear">
               <select name="tipoP" className="cInput">
@@ -96,12 +107,7 @@ const Proyectos = () => {
               />
               <p>Subir foto de Proyecto</p>
               <input type="file" name="file" className="fInput" />
-              <input type="submit" value="Guardar" className="bGuardar" />
-              <input
-                type="submit"
-                value="Guardar y publicar"
-                className="bGuardar"
-              />
+              <input type="submit" value="Actualizar" className="bGuardar" />
             </form>
           </div>
         </Modal>
@@ -110,4 +116,4 @@ const Proyectos = () => {
   );
 };
 
-export default Proyectos;
+export default Perfil;

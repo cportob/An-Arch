@@ -633,6 +633,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
 }
 
 .iProyecto {
@@ -648,4 +649,16 @@
 .iDProyecto {
   text-align: center;
   margin-bottom: 15px;
+}
+.cBack {
+  align-self: flex-start;
+}
+.back {
+  display: flex;
+  width: 30px;
+}
+
+.back img {
+  width: 100%;
+  object-fit: cover;
 }
