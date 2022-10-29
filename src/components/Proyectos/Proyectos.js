@@ -16,7 +16,7 @@ const Proyectos = () => {
     textarea: "",
     country: "",
     address: "",
-    file: "",
+    photo: "",
   });
 
   const {
@@ -29,7 +29,7 @@ const Proyectos = () => {
     textarea,
     country,
     address,
-    file,
+    photo,
   } = datos;
 
   const onChange = (e) => {
@@ -121,7 +121,7 @@ const Proyectos = () => {
               </div>
               <input
                 className="input"
-                type="number"
+                type="text"
                 name="budget"
                 value={budget}
                 placeholder="Presupuesto"
@@ -138,7 +138,7 @@ const Proyectos = () => {
               />
               <input
                 className="input"
-                type="country"
+                type="text"
                 name="country"
                 value={country}
                 placeholder="Ciudad"
@@ -146,7 +146,7 @@ const Proyectos = () => {
               />
               <input
                 className="input"
-                type="address"
+                type="text"
                 name="address"
                 value={address}
                 placeholder="Dirección"
@@ -155,8 +155,8 @@ const Proyectos = () => {
               <p>Subir foto de Proyecto</p>
               <input
                 type="file"
-                name="file"
-                value={file}
+                name="photo"
+                value={photo}
                 className="fInput"
                 onChange={onChange}
               />
