@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Modal from "../Modal/Modal";
 import add from "../../img/add.png";
 import { Link } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
+import ProyectosContext from "../../context/proyectos/proyectosContext";
 
 const Proyectos = () => {
+  const proyectosContext = useContext(ProyectosContext);
+  const { registrarProyecto } = proyectosContext;
   const [open, setOpen] = useState(false);
   const [datos, setDatos] = useState({
     tipoP: "",
@@ -17,6 +20,7 @@ const Proyectos = () => {
     country: "",
     address: "",
     photo: "",
+    contratante: "",
   });
 
   const {
@@ -30,10 +34,27 @@ const Proyectos = () => {
     country,
     address,
     photo,
+    contratante,
   } = datos;
 
   const onChange = (e) => {
     setDatos({ ...datos, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    registrarProyecto({
+      tipoP,
+      garaje,
+      piscina,
+      patio,
+      balcon,
+      budget,
+      textarea,
+      country,
+      address,
+      photo,
+      contratante,
+    });
   };
   const item = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   return (
@@ -63,7 +84,7 @@ const Proyectos = () => {
         </main>
         <Modal open={open} setOpen={setOpen} title={"Crear Proyecto"}>
           <div className="crearP">
-            <form className="datos" action="crear">
+            <form className="datos" onSubmit={handleSubmit}>
               <select
                 name="tipoP"
                 value={tipoP}

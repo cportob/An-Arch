@@ -8,6 +8,8 @@ import MisTrabajos from "./Pages/misTrabajos";
 import Perfil from "./Pages/perfil";
 import DProyecto from "./Pages/dProyecto";
 import Buscar from "./Pages/buscar";
+import AuthState from "./context/auth/authState";
+import ProyectosState from "./context/proyectos/proyectosState";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -24,9 +26,13 @@ const AppRoutes = () => {
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes></AppRoutes>
-    </BrowserRouter>
+    <AuthState>
+      <ProyectosState>
+        <BrowserRouter>
+          <AppRoutes></AppRoutes>
+        </BrowserRouter>
+      </ProyectosState>
+    </AuthState>
   );
 }
 

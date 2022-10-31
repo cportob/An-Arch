@@ -1,10 +1,14 @@
 import Logo from "../../img/Prev.png";
 import "../../App.css";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { rutas } from "../../helpers/Rutas";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import AuthContext from "../../context/auth/authContext";
 
-const Register = () => {
+const Register = (props) => {
+  const authContext = useContext(AuthContext);
+  const { autenticado, registrarUsuario } = authContext;
+
   const [datos, setDatos] = useState({
     nombre: "",
     phone: "",
@@ -18,6 +22,11 @@ const Register = () => {
 
   const onChange = (e) => {
     setDatos({ ...datos, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    registrarUsuario({ nombre, phone, nit, email, password, tipo });
   };
 
   return (
@@ -35,7 +44,7 @@ const Register = () => {
         </div>
         <div className="container">
           <div className="formulario">
-            <form action="form" className="form">
+            <form onSubmit={handleSubmit} className="form">
               <input
                 type="text"
                 name="nombre"
